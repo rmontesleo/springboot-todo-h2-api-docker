@@ -1,7 +1,5 @@
 # Building Container
 
-
-
 ```bash
 docker build -t  <IMAGE_NAME>:<VERSION>  .
 ```
@@ -26,12 +24,46 @@ docker run -d -p 8080:8080 --name app01 springboot-todo-h2-api-docker:0.1
 docker exec -it app01 bash
 ```
 
-### Tag your image
+### stop your container
+docker stop app01
 
+### delete your container
+docker rm app01
+
+### run with compose
+```bash
+docker-compose up -d
+````
+
+### check the application with compose
+```bash
+docker-compose ps 
+```
+
+### see the logs of the compose
+```bash
+docker-compose logs
+````
+
+docker-compose stop
+
+
+docker-compose start
+
+
+docker-compose down -v
+
+
+export USER_REGISTRY_NAME=<SET_YOUR_DOCKER_USER_NAME>
+
+### Tag your image
+```bash
+docker tag springboot-todo-h2-api-docker:0.1  $USER_REGISTRY_NAME/springboot-todo-h2-api-docker:0.1
+```
+
+docker logout
+
+docker login
 
 ### upload the image
-
-
-
-
-
+docker push  $USER_REGISTRY_NAME/springboot-todo-h2-api-docker:0.1
