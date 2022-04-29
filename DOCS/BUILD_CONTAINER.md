@@ -1,5 +1,8 @@
 # Building Container
 
+Instructions to build the image the first time
+
+
 ```bash
 docker build -t  <IMAGE_NAME>:<VERSION>  .
 ```
@@ -45,25 +48,42 @@ docker-compose ps
 docker-compose logs
 ````
 
+```bash
 docker-compose stop
+```
 
 
+```bash
 docker-compose start
+```
 
 
+```bash
 docker-compose down -v
+```
 
 
+```bash
 export USER_REGISTRY_NAME=<SET_YOUR_DOCKER_USER_NAME>
+```
 
 ### Tag your image
 ```bash
 docker tag springboot-todo-h2-api-docker:0.1  $USER_REGISTRY_NAME/springboot-todo-h2-api-docker:0.1
 ```
 
-docker logout
 
+```bash
+docker logout
+```
+
+
+```bash
 docker login
+```
 
 ### upload the image
+
+```bash
 docker push  $USER_REGISTRY_NAME/springboot-todo-h2-api-docker:0.1
+```

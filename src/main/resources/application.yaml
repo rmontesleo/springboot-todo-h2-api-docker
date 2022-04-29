@@ -1,7 +1,7 @@
 server:
   port: 8080
   servlet:
-    context-path: "/api/todoapp/docker"
+    context-path: "/api/todoapp"
 
 spring:
   application:
@@ -25,6 +25,6 @@ spring:
       root: INFO
       org.springframework.web: ERROR
       org.hibernate: ERROR
-      com.demo.todoapi: DEBUG
+      com.demo.todoapi.*: DEBUG
 
 

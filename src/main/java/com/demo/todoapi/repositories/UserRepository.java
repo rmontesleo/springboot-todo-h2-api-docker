@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 /**
- * Test on http://localhost:8080/api/todoapp/jib/h2-console
+ * Test on http://localhost:8080/api/todoapp/h2-console/login.jsp
  */
 public interface UserRepository extends JpaRepository<User,Long> {
 

@@ -10,6 +10,6 @@ http://localhost:8080/swagger-ui/index.html
 
 ## After configure context
 
-http://localhost:8080/api/todoapp/docker
+http://localhost:8080/api/todoapp
 
-http://localhost:8080/api/todoapp/docker/swagger-ui/index.html
+http://localhost:8080/api/todoapp/swagger-ui/index.html

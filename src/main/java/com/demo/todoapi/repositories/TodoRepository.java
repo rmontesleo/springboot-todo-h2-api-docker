@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Test on http://localhost:8080/api/todoapp/jib/h2-console
+ * Test on http://localhost:8080/api/todoapp/h2-console/login.jsp
  */
 public interface TodoRepository extends JpaRepository<Todo,Long> {
 
