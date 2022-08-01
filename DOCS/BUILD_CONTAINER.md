@@ -36,7 +36,7 @@ docker rm app01
 ### run with compose
 ```bash
 docker-compose up -d
-````
+```
 
 ### check the application with compose
 ```bash
@@ -46,7 +46,7 @@ docker-compose ps
 ### see the logs of the compose
 ```bash
 docker-compose logs
-````
+```
 
 ```bash
 docker-compose stop
