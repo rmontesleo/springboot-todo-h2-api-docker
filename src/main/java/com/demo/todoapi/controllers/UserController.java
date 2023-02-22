@@ -20,6 +20,7 @@ public class UserController {
 
     private final UserService userService;
 
+
     @GetMapping("/all")
     public ResponseEntity<List<User> > fetchAllUsers(){
         log.debug("Get all users");

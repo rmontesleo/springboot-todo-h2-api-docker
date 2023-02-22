@@ -1,10 +1,8 @@
-# Name this image like  springboot-todo-h2-api-docker
-
-
 FROM eclipse-temurin:17-jdk-alpine as base
 WORKDIR /app
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
+RUN chmod +x mvnw
 RUN ./mvnw dependency:resolve
 COPY src ./src
 
@@ -22,5 +20,5 @@ FROM eclipse-temurin:17-jre-alpine as production
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 EXPOSE 8080
-COPY --from=build /app/target/springboot-todo-h2-api-docker.jar /springboot-todo-h2-api-docker.jar
-ENTRYPOINT ["java", "-jar", "springboot-todo-h2-api-docker.jar" ]
+COPY --from=build /app/target/springboot-todo-h2-api-docker.jar /home/spring/springboot-todo-h2-api-docker.jar
+ENTRYPOINT ["java", "-jar", "/home/spring/springboot-todo-h2-api-docker.jar" ]
