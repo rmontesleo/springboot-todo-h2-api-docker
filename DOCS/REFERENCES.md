@@ -52,6 +52,10 @@ This file has links to some topics used in this project.
 - [Spring Boot With H2 Database](https://www.baeldung.com/spring-boot-h2-database)
 - [Java Lombok Tutorial [NEW]](https://www.youtube.com/watch?v=z7bsNF2Dtf0)
 
+## SpringBoot
+
+- [Book's Upgrade: Migrating from Spring Boot 2.6 to 2.7](https://thepracticaldeveloper.com/book-update-2.7.1/)
+
 
 ## Maven
 - [Downloading Apache Maven](https://maven.apache.org/download.cgi)
